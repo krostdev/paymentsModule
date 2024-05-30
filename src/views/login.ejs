@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/styles.css">
+    <link rel="shortcut icon" href="/assets/mp_logo.png" type="image/x-icon">
+    <title>Payment Module</title>
+</head>
+<body>
+    <form id="login" action="/setToken" method="post">
+        <input required type="text" id="accesstoken" name="accesstoken" placeholder="Insira o seu Access Token do Mercado Pago...">
+        <button type="submit" id="login">Entrar</button>
+    </form>
+    <span class="information"><img class="svg_info" src="/svg/info.svg" alt="Info Icon">Será gerado um pix de R$0.10 para validar o token...</span>
+
+    <% if (success != null && success === false) {%>
+        <script>
+            alert("O access token não é valido...")
+        </script>
+    <% }%>
+
+    <script src="/login/script.js"></script>
+</body>
+</html>

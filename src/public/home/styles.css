@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2c64a5;
+}
+
+.leave_options {
+    text-align: center;
+}
+
+.token_formatted {
+    color: #ecececd0;
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+}
+
+.leave_button {
+    width: 5.5rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 1.8px solid #80bbff;
+    border-radius: 5px;
+
+    cursor: pointer;
+    color: #fff;
+
+    transition: all ease 0.35s;
+}
+
+.leave_button:hover {
+    background-color: #80bbff;
+    color: #000000c4;
+}
+
+.header__text {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+
+    user-select: none;
+    margin-left: 0.5rem;
+}
+
+.others_buttons {   
+    margin-top: 0.5rem;
+}
+
+.others_button {
+   cursor: pointer;
+   text-decoration: none;
+   color: #eeeeee;
+   padding: 10px;
+
+   transition: all ease 0.2s;
+   font-size: 1.3rem;
+}
+
+.others_button:hover {
+    color: #fdfdfdd2;
+}

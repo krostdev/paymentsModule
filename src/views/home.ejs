@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/mp_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="home/styles.css">
+    <title>Payment Module | Home</title>
+</head>
+<body>
+    <nav class="header">
+        <span class="header__text">Payment Module</span>
+
+        <div class="others_buttons">
+            <a class="others_button" href="#">Historico</a>
+            <a class="others_button" href="#">Sobre</a>
+        </div>
+
+        <form id="leave_options" action="/logout" method="post">
+            <% let formatted = ``; for (let i=0; i < 13; i++) { formatted += `${token.charAt(i)}` } %>
+
+            <span class="token_formatted"><%= formatted %>****</span>
+            <button class="leave_button" type="submit">Sair</button>
+        </form>
+    </nav>
+
+</body>
+</html>
